@@ -1,11 +1,17 @@
 package com.skilltrack.entity;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Employees {
     public Employees() {
 
     }
 
-    int id_employees;
+    @Id
+    Long id_employees;
     String name;
     String email;
     String contact;
@@ -15,7 +21,7 @@ public class Employees {
     String user_linkedin;
 
 
-    public int getId_employees() {
+    public Long getId_employees() {
         return id_employees;
     }
 
